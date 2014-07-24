@@ -25,3 +25,24 @@ Given the combined matrix of cells corresponding to plates A and B, we can remov
 ![PCA painting by plate](images/removeBatchEffect_Plate1vs2.png)
 
 
+## Removing variation due to counts of reads per cell
+
+```
+    R
+    >source("PCA_paint_by_totalCounts.removeCovariates.R")
+```
+
+![PCA painting by read counts, green=low,red=high](images/removeBatchEffect_TotalCounts.png)
+
+
+## Using RUVSeq
+
+   TBD
+
+
+## Using svaseq
+
+   TBD
+
+
+
