@@ -27,6 +27,8 @@ Given the combined matrix of cells corresponding to plates A and B, we can remov
 
 ## Removing variation due to counts of reads per cell
 
+Only plate-A is being used here.
+
 ```
     R
     >source("PCA_paint_by_totalCounts.removeCovariates.R")
