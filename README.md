@@ -1,5 +1,4 @@
-Toying Around with Unsupervised Single Cell RNASeq Analysis
-===========================================================
+# Toying Around with Unsupervised Single Cell RNASeq Analysis
 
 Unsupervised analysis of single cell transcriptomes is complicated by a number of factors that could be considered nuissance variations or batch effects, and here we're exploring various methods that are available to remove unwanted variation and better enable unsupervised analysis of variation among single cell transcriptomes.
 
@@ -12,8 +11,9 @@ Note, there may be actual interesting biological differences between these two p
 Another disclaimer is that, although there are may not be 'perfect' strategies for doing this from a theoretical perspective (from what I hear), there may be otherwise useful bioinformatic and computational approaches that we can explore that should allow removing unwanted variation and better enable unsupervised analyses of combined data sets, with results that could be followed up on using other strategies.
 
 
-Using edgeR removeBatchEffect()
--------------------------------
+## Using edgeR removeBatchEffect()
+
+### Removing variation due to Plate A vs. Plate B
 
 Given the combined matrix of cells corresponding to plates A and B, we can remove the variation that's correlated with the plate identifiers.
 
@@ -23,4 +23,5 @@ Given the combined matrix of cells corresponding to plates A and B, we can remov
 ```
 
 ![PCA painting by plate](images/removeBatchEffect_Plate1vs2.png)
+
 
